@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Media Queries*/
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+    #landing {
+      #wrapper {
+        display: none;
+      }
+    }
+    #logo {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    //Start Custom Styles
+    #nav {
+      .buttons {
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        font-size: 2em;
+      }
+      h1 {
+        width: 100%;
+        font-size: 3em;
+        margin-top: 0;
+      }
+    }
+    #landing {
+      h1 {
+        font-size: 2em;
+        color: $black;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      #wrapper {
+        display: none;
+      }
+      #downArrow {
+        display: none;
+      }
+    }
+
+    #container {
+      padding: 5% 0;
+      @include clearFix;
+    }
+
+    #sliderShowFull {
+      .float {
+        white-space: pre-wrap;
+      }
+    }
+
+    #sliderShowFull, #sliderShowPart {
+      width: 100%;
+      .sectionFull, .sectionPart {
+        height: 130px;
+      }
+      h4 {
+        font-size: 2em;
+        padding-top: 3%;
+      }
+      span {
+        font-size: .5em;
+        width: 20%;
+        padding: .8em;
+      }
+    }
+    #thumbWrap {
+      display: none;
+    }
+    .arrowLeft, .arrowRight {
+      top: 60%;
+      margin: 0;
+    }
+
+    .arrowLeft {
+      left: 0;
+    }
+    .arrowRight {
+      right: 0;
+    }
+
+    img.thumb {
+      display: none;
+    }
+
+    img.large {
+      width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    //Start Custom Styles
+    @include landing-medium;
+
+    #nav {
+      .buttons {
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        font-size: 2.5em;
+      }
+      h1 {
+        width: 80%;
+        font-size: 5em;
+      }
+    }
+    #container {
+      margin: 5% auto 0;
+      @include clearFix;
+    }
+    #sliderShowFull, #sliderShowPart {
+      width: 90%;
+      .sectionFull, .sectionPart {
+        height: 175px;
+      }
+      h4 {
+        font-size: 2em;
+        padding-top: 3%;
+      }
+      span {
+        font-size: .5em;
+        width: 25%;
+        padding: .5em;
+      }
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    //Start Custom Styles
+    @include landing-large;
+    #nav {
+      .buttons {
+        width: 60%;
+      }
+      a {
+        font-size: 2em;
+        width: 100%;
+      }
+      h1 {
+        width: 60%;
+        font-size: 5em;
+      }
+    }
+
+    #container {
+      margin: 5% auto 0;
+      @include clearFix;
+    }
+    #content {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #sliderShowFull, #sliderShowPart {
+      width: 80%;
+      .sectionFull, .sectionPart {
+        height: 200px;
+        padding: 0;
+      }
+      h4 {
+        font-size: 2.5em;
+        padding-top: 2%;
+      }
+      span {
+        font-size: .5em;
+        width: 25%;
+        padding: .8em;
+      }
+    }
+}
+
+@media only screen and (max-height: 500px) {
+ #sliderShowFull img.large, #sliderShowPart img.large {
+  margin: 5% auto 0 auto;
+ }
+ #sliderShowFull img.thumb, #sliderShowPart img.thumb {
+   display: none;
+ }
+ #nav {
+   .buttons {
+     width: 100%;
+   }
+   a {
+     width: 100%;
+     font-size: 1.5em;
+
+   }
+   h1 {
+     width: 80%;
+     font-size: 3em;
+     margin-top: 0;
+   }
+ }
+}

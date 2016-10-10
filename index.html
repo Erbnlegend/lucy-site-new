@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="galleryFun">
+<head>
+  <title>Lucy Erb | Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta content="Lucy Erb is a sculptor artist exploring themes of cross cultural symbolism and the psychology of how we perceive beauty through nature." >
+  <meta name="description" content="Lucy Erb's Gallery of Sculpture Art">
+  <meta name="keywords" content="Art, Sculpture, Lucy Erb, Gallery">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="shortcut icon" href="assets/img/landing-img/LucyErb.png"/>
+  <script src="assets/js/vendors/jquery2.2.0.min.js"></script>
+  <script src="assets/js/vendors/angular.js"></script>
+  <script src="assets/js/vendors/angular-touch.min.js"></script>
+  <script src="assets/js/vendors/wow.min.js"></script>
+  <script src="assets/js/angularApp.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+  <script>
+    wow = new WOW(
+        {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      )
+      wow.init();
+  </script>
+</head>
+<body>
+
+<div id="navButton">
+  <a href="javascript:void(0)">&#xf0c9;</a>
+</div>
+<div id="nav">
+  <p>X</p>
+  <h1>Lucy Erb</h1>
+  <div class="buttons">
+    <a href="#topNavPop">Gallery</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+    <a href="blog">Blog</a>
+  </div>
+</div>
+
+
+<div id="landing">
+  <div id="landingGallery">
+    <a href="../index.html"><h1>Lucy Erb</h1></a>
+  </div>
+  <div id="wrapper">
+    <div id="first">
+      <a href="blog">Blog<br /><span>&#xf036;</span></a>
+    </div>
+    <div id="middle">
+      <a href="about">About<br /><span>&#xf1ae;</span></a>
+    </div>
+    <div id="last">
+      <a href="contact">Contact<br /><span>&#xf1d9;</span></a>
+    </div>
+  </div>
+  <div id="downArrow">
+    <a href="#">&#xf063;</a>
+  </div>
+</div>
+<!--Main Content Box-->
+
+<div id="container">
+  <div id="content">
+
+    <!--Gallery-->
+
+    <article id="sliderShowPart" ng-controller="GalleryController as galCtrl">
+      <div ng-repeat="img in gallery">
+        <div class="wow fadeIn sectionPart">
+        <div class="title">
+          <h4 category="{{img.category}}" gallery="{{img.id}}" ng-click="open=true; getInitImage($event)">{{img.name}}<br />
+            <span category="{{img.category}}" gallery="{{img.id}}" ng-click="open=true; getInitImage($event)">See the Gallery</span>
+          </h4>
+        </div>
+        <a href="javascript:void(0)" class="float">
+          <img ng-src="assets/img/galleries/{{img.imgsrc}}">
+        </a>
+        </div>
+
+        <!--Popup Section-->
+        <div id="gallery">
+        <div id="galleryPop" ng-show="open">
+          <div id="wrapper"></div>
+          <div id="{{img.id}}-imgs" class="showThumbs">
+            <div class="close" ng-click="open=false">X</div>
+
+            <!--Sets the Folder ID for the replaceImage function-->
+            <div id="arrowRight" gallery="{{img.id}}" direction="1" ng-click="arrowSelected($event)">></div>
+            <img id="{{img.category}}{{img.id}}-large" gallery="{{img.id}}" left="1" right="-1" ng-swipe-right="nextSlide($event)" ng-swipe-left="prevSlide($event)"
+            thumbNailIndex="1" class="large" src="assets/img/transparent.png">
+            <div id="arrowLeft" gallery="{{img.id}}" direction="-1" ng-click="arrowSelected($event)"><</div>
+            <div ng-repeat="thumb in img.galImages">
+              <div id="thumbWrap">
+                <img gallery="{{img.id}}" thumb="{{thumb.id}}" class="thumb" ng-click="replaceImage($event)" ng-src="assets/img/galleries/{{thumb.imgSmall}}" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+
+  </div>
+</div>
+
+<div id="footer" class="row">
+    <div>
+        <div class="fb-like">
+           <a href="https://www.facebook.com/lucyerbartist" target="_blank"><img src="assets/img/landing-img/facebook-like-button.png" /></a>
+        </div>
+    </div>
+
+    <div>
+        <a href="https://twitter.com/lucy_erb_artist" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @lucy_erb_artist</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    </div>
+    <div>
+          <span class="ig-follow" data-id="594d363" data-handle="erblucy" data-count="false" data-size="medium" data-username="false"></span>
+
+    </div>
+</div>
+
+<!--Instagram Script-->
+
+<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+
+<!--Other Scripts-->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/hover.js"></script>
+  </body>
+</html>

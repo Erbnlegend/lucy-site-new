@@ -1,0 +1,75 @@
+@mixin sliderDefaults {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: auto;
+  .sectionFull, .sectionPart {
+    background: $teal;
+    box-shadow: 1px 1px 3px 2px rgb(100,100,100);
+    margin-top: 1em;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .title h4, .float {
+    display: block;
+    float: left;
+    will-change: margin-right;
+    transition: all .5s ease-in-out;
+  }
+  h4 {
+    text-align: center;
+    line-height: 1.5em;
+    position: relative;
+  }
+  span {
+    transition: all .5s ease-in-out;
+  }
+  .float img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+#sliderShowFull {
+  @include sliderDefaults;
+.title h4 {
+  width: 100%;
+}
+.float {
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 1.5em;
+}
+h4 {
+  white-space: pre-wrap;
+}
+span {
+  font-family: fAwesome;
+  opacity: 1;
+  font-size: 1em;
+}
+}
+
+#sliderShowPart {
+  @include sliderDefaults;
+.title h4 {
+  width: 60%;
+}
+span {
+  border: 3px solid darken($teal, 10);
+  opacity: 0;
+  &:hover {
+    background: darken($teal, 10);
+  }
+}
+.float {
+  width: 40%;
+  height: 100%;
+}
+}
