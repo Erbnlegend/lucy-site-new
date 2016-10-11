@@ -15,7 +15,10 @@
 <script src="../assets/js/vendors/angular.js"></script>
 <script src="../assets/js/vendors/angular-touch.min.js"></script>
 <script src="../assets/js/vendors/wow.min.js"></script>
+<script src="../assets/js/vendors/svgConvert.min.js"></script>
+<script src="../assets/js/svg.js"></script>
 <script src="../assets/js/angularApp.js"></script>
+
 
     <script>
         new WOW().init();
@@ -107,33 +110,17 @@
   </div>
 <h3>Techniques</h3>
   <div class="row">
-    <div class="col-4">
+    <div class="col-4 skill">
       <h4>Fiber</h4>
-      <ul>
-        <li>Felting</li>
-        <li>Silk Painting</li>
-        <li>Stitching</li>
-        <li>Natural Dyeing</li>
-        <li>Weaving</li>
-      </ul>
+      <img class="svg-convert" src="../assets/img/landing-img/fiber.svg" />
     </div>
-    <div class="col-4">
+    <div class="col-4 skill">
       <h4>Wood</h4>
-      <ul>
-        <li>Carving</li>
-        <li>Turning</li>
-        <li>Joinery</li>
-      </ul>
+      <img class="svg-convert" src="../assets/img/landing-img/wood.svg" />
     </div>
-    <div class="col-4">
+    <div class="col-4 skill">
       <h4>Metal</h4>
-      <ul>
-        <li>Casting</li>
-        <li>Soldering</li>
-        <li>Cold Connection</li>
-        <li>Welding</li>
-        <li>CNC Plasma</li>
-      </ul>
+      <img class="svg-convert" src="../assets/img/landing-img/metal.svg" />
     </div>
   </div>
 </article>
@@ -144,9 +131,9 @@
 <div ng-controller="AwardsController">
   <h4>Awards</h4>
   <div class="row">
-    <div hover="awards" class="wow fadeIn sectionFull col-6" ng-repeat="award in awards">
-      <div class="title"><h4>{{award.title}}<span>&#xf18e;</span></h4></div>
-      <div class="float"><h5>{{award.year}}<br />{{award.area}}<br />{{award.location}}</h5></div>
+    <div hover="awards" class="wow fadeIn sectionFull" ng-repeat="award in awards">
+        <div class="title"><h4>{{award.title}}<span>&#xf18e;</span></h4></div>
+        <div class="float"><h5>{{award.year}}<br />{{award.area}}<br />{{award.location}}</h5></div>
     </div>
   </div>
 </div>

@@ -6,9 +6,16 @@
   .sectionFull, .sectionPart {
     background: $teal;
     box-shadow: 1px 1px 3px 2px rgb(100,100,100);
-    margin-top: 1em;
+    margin-top: 2%;
     overflow: hidden;
     cursor: pointer;
+  }
+  .sectionFull {
+    width: 49%;
+    display: inline-block;
+    &:nth-of-type(2n +1) {
+      margin-right: 2%;
+  }
   }
   .title h4, .float {
     display: block;
@@ -44,7 +51,7 @@
   white-space: nowrap;
   text-align: center;
   margin-top: 5%;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 h4 {
   white-space: pre-wrap;

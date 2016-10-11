@@ -80,6 +80,9 @@
       padding: 5% 0;
       @include clearFix;
     }
+    .skill {
+      width: 33%;
+    }
 
     #sliderShowFull {
       .float {
@@ -90,10 +93,10 @@
     #sliderShowFull, #sliderShowPart {
       width: 100%;
       .sectionFull, .sectionPart {
-        height: 130px;
+        height: 115px;
       }
       h4 {
-        font-size: 2em;
+        font-size: 1.5em;
         padding-top: 3%;
       }
       span {
@@ -164,7 +167,7 @@
     #sliderShowFull, #sliderShowPart {
       width: 90%;
       .sectionFull, .sectionPart {
-        height: 175px;
+        height: 150px;
       }
       h4 {
         font-size: 2em;
@@ -214,17 +217,17 @@
       @include clearFix;
     }
     #content {
-      width: 90%;
+      width: 75%;
       margin: 0 auto;
     }
     #sliderShowFull, #sliderShowPart {
       width: 80%;
       .sectionFull, .sectionPart {
-        height: 200px;
+        height: 150px;
         padding: 0;
       }
       h4 {
-        font-size: 2.5em;
+        font-size: 2em;
         padding-top: 2%;
       }
       span {
