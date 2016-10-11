@@ -277,7 +277,10 @@ table {
     width: 100%;
   }
   #sliderShowFull .sectionFull, #sliderShowFull .sectionPart, #sliderShowPart .sectionFull, #sliderShowPart .sectionPart {
-    height: 115px;
+    height: 135px;
+  }
+  #sliderShowFull .float img, #sliderShowPart .float img {
+    height: 100%;
   }
   #sliderShowFull h4, #sliderShowPart h4 {
     font-size: 1.5em;
