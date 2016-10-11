@@ -764,7 +764,7 @@ table {
 }
 
 #sliderShowFull .sectionFull, #sliderShowFull .sectionPart {
-  background: #607d8b;
+  background: rgba(33, 150, 243, 0.9);
   box-shadow: 1px 1px 3px 2px #646464;
   margin-top: 1%;
   overflow: hidden;
@@ -827,7 +827,7 @@ table {
 }
 
 #sliderShowPart .sectionFull, #sliderShowPart .sectionPart {
-  background: #607d8b;
+  background: rgba(33, 150, 243, 0.9);
   box-shadow: 1px 1px 3px 2px #646464;
   margin-top: 1%;
   overflow: hidden;
@@ -863,12 +863,12 @@ table {
 }
 
 #sliderShowPart span {
-  border: 3px solid #4b626d;
+  border: 3px solid rgba(12, 124, 213, 0.9);
   opacity: 0;
 }
 
 #sliderShowPart span:hover {
-  background: #4b626d;
+  background: rgba(12, 124, 213, 0.9);
 }
 
 #sliderShowPart .float {
@@ -1026,7 +1026,7 @@ article p {
 }
 
 #contact input[type=submit] {
-  background: #607d8b;
+  background: rgba(33, 150, 243, 0.9);
   display: block;
   width: 75%;
   padding: 1em;
@@ -1034,7 +1034,7 @@ article p {
 }
 
 #contact input[type=submit]:hover {
-  background: #4b626d;
+  background: rgba(12, 124, 213, 0.9);
 }
 
 .logo {
