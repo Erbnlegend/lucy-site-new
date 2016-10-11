@@ -52,11 +52,12 @@
       a {
         width: 100%;
         font-size: 2em;
+        margin: .5em auto;
       }
       h1 {
         width: 100%;
         font-size: 3em;
-        margin-top: 0;
+        margin: .5em auto;
       }
     }
     #landing {
@@ -80,11 +81,20 @@
       padding: 5% 0;
       @include clearFix;
     }
-    .skill {
-      width: 33%;
+    #bio {
+      svg {
+        width: 100%;
+      }
+      .skill {
+        width: 33%;
+        h4 {
+          width: 100%;
+        }
+    }
     }
 
     #sliderShowFull {
+      width: 100%;
       .float {
         white-space: pre-wrap;
       }
@@ -153,16 +163,28 @@
       }
       a {
         width: 100%;
-        font-size: 2.5em;
+        font-size: 2em;
+        margin: 1em auto;
       }
       h1 {
         width: 80%;
         font-size: 5em;
+        margin: .5em auto .5em;
       }
     }
     #container {
       margin: 5% auto 0;
       @include clearFix;
+    }
+    #bio {
+      svg {
+        width: 70%;
+      }
+      .skill {
+        h4 {
+          width: 70%;
+        }
+      }
     }
     #sliderShowFull, #sliderShowPart {
       width: 90%;
@@ -178,6 +200,13 @@
         width: 25%;
         padding: .5em;
       }
+    }
+    .sectionFull {
+      width: 49%;
+      display: inline-block;
+      &:nth-of-type(2n +1) {
+        margin-right: 1%;
+    }
     }
 }
 
@@ -205,10 +234,12 @@
       a {
         font-size: 2em;
         width: 100%;
+        margin: 1em auto;
       }
       h1 {
         width: 60%;
         font-size: 5em;
+        margin: 1em auto;
       }
     }
 
@@ -219,6 +250,16 @@
     #content {
       width: 75%;
       margin: 0 auto;
+    }
+    #bio {
+      svg {
+        width: 60%;
+      }
+      .skill {
+        h4 {
+          width: 60%;
+        }
+      }
     }
     #sliderShowFull, #sliderShowPart {
       width: 80%;
@@ -236,6 +277,14 @@
         padding: .8em;
       }
     }
+    .sectionFull {
+      width: 49%;
+      display: inline-block;
+      &:nth-of-type(2n +1) {
+        margin-right: 1%;
+    }
+    }
+
 }
 
 @media only screen and (max-height: 500px) {
@@ -252,12 +301,12 @@
    a {
      width: 100%;
      font-size: 1.5em;
-
+     margin: 0 auto;
    }
    h1 {
      width: 80%;
      font-size: 3em;
-     margin-top: 0;
+     margin: .5em auto;
    }
  }
 }

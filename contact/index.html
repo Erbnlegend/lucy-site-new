@@ -7,18 +7,12 @@
 <meta content="Lucy Erb is a sculptor artist exploring themes of cross cultural symbolism and the psychology of how we perceive beauty through nature." >
 <meta name="description" content="Lucy Erb's Gallery of Sculpture Art">
 <meta name="keywords" content="Art, Sculpture, Lucy Erb, Gallery">
-<link rel="stylesheet" href="../assets/css/reset.css">
 <link rel="stylesheet" href="../assets/css/style.css">
-<link rel="stylesheet" href="../assets/css/mediaQuery.css">
-<link rel="stylesheet" href="../assets/css/mobileNav.css">
 <link rel="stylesheet" href="../assets/css/animate.css">
-<link rel="stylesheet" href="../assets/css/pop.css">
-<link rel="shortcut icon" href="../assets/img/layout-img/LucyErb.png"/>
+<link rel="shortcut icon" href="../assets/img/landing-img/LucyErb.png"/>
 <script src="https://use.fontawesome.com/c64036a8b4.js"></script>
-<script src="../assets/js/jquery2.2.0.min.js" type="text/javascript"></script>
-<script src="../assets/js/css-pop.js"></script>
-<script src="../assets/js/navigation.js"></script>
-<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/vendors/jquery2.2.0.min.js" type="text/javascript"></script>
+<script src="../assets/js/vendors/wow.min.js"></script>
 
     <script>
         new WOW().init();
@@ -37,109 +31,89 @@
     </script>
 </head>
   <body>
-    <!--TopNav Pop-->
 
-            <div class="topNavPerm row">
-                <a class="col-3 col-m-3 center-text hover" href="../index.html#topNavPop">Gallery</a>
-                <a class="col-3 col-m-3 center-text hover" href="../about">About</a>
-                <a class="col-3 col-m-3 center-text hover" href="javascript:void(0)">Contact</a>
-                <a class="col-3 col-m-3 center-text hover" href="../blog">Blog</a>
-                <span class="fa fa-bars" onclick="openNav()"></span>
-            </div>
-
-        <div id="mobileNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-            <div class="overlayNav">
-                <a class="col-m-12 center-text hover" href="../index.html#topNavPop" onclick="closeNav()">Gallery</a>
-                <a class="col-m-12 center-text hover" href="../about" onclick="closeNav()">About</a>
-                <a class="col-m-12 center-text hover" href="javascript:void(0)" onclick="closeNav()">Contact</a>
-                <a class="col-m-12 center-text hover" href="../blog" onclick="closeNav()">Blog</a>
-            </div>
-        </div>
+    <div id="navButton">
+      <a href="javascript:void(0)">&#xf0c9;</a>
+    </div>
+    <div id="nav">
+      <p>X</p>
+      <h1>Lucy Erb</h1>
+      <div class="buttons">
+        <a href="../">Gallery</a>
+        <a href="../about">About</a>
+        <a href="../contact">Contact</a>
+        <a href="../blog">Blog</a>
+      </div>
+    </div>
 
     <!--Main Content Box-->
 
-    <div id="shadow-large">
-    <div id="content">
+<div id="content">
 
-      <!--Contact-->
+  <!--Contact-->
+<article id="contact">
+  <form accept-charset="UTF-8" action="https://xj150.infusionsoft.com/app/form/process/5854ad348dd3558d7b076a238fe9468b" class="infusion-form" method="POST">
 
-      <article id="contact">
-          <div class="row header">
-              <div class="col-12">
-                  <h3>CONTACT</h3>
-              </div>
-          </div>
+    <input name="inf_form_xid" type="hidden" value="5854ad348dd3558d7b076a238fe9468b" />
+    <input name="inf_form_name" type="hidden" value="Sign up for newsletter" />
+    <input name="infusionsoft_version" type="hidden" value="1.43.0.45" />
 
-      <form accept-charset="UTF-8" action="https://xj150.infusionsoft.com/app/form/process/5854ad348dd3558d7b076a238fe9468b" class="infusion-form" method="POST">
-
-      <input name="inf_form_xid" type="hidden" value="5854ad348dd3558d7b076a238fe9468b" />
-      <input name="inf_form_name" type="hidden" value="Sign up for newsletter" />
-      <input name="infusionsoft_version" type="hidden" value="1.43.0.45" />
-
-          <div class="row">
-      <div class="infusion-field"><label for="inf_field_FirstName"></label>
+    <div class="row">
+      <div class="infusion-field">
+        <label for="inf_field_FirstName"></label>
           <input class="infusion-field-input-container col-4" id="inf_field_FirstName" name="inf_field_FirstName" type="text" placeholder="First Name *"/>
       </div>
-              <div class="col-8"></div>
-          </div>
+      <div class="col-8"></div>
+    </div>
 
-          <div class="row">
-      <div class="infusion-field"><label for="inf_field_LastName"></label>
+    <div class="row">
+      <div class="infusion-field">
+        <label for="inf_field_LastName"></label>
           <input class="infusion-field-input-container col-4" id="inf_field_LastName" name="inf_field_LastName" type="text" placeholder="Last Name *"/>
       </div>
-              <div class="col-8"></div>
-          </div>
+      <div class="col-8"></div>
+    </div>
 
-          <div class="row">
-      <div class="infusion-field"><label for="inf_field_Email"></label>
+    <div class="row">
+      <div class="infusion-field">
+        <label for="inf_field_Email"></label>
           <input class="infusion-field-input-container col-4" id="inf_field_Email" name="inf_field_Email" type="text" placeholder="Email *"/>
       </div>
-              <div class="col-8"></div>
-          </div>
+      <div class="col-8"></div>
+    </div>
 
-          <div class="row">
-
-      <div class="infusion-field"><label for="inf_custom_LucyComments"></label>
+    <div class="row">
+      <div class="infusion-field">
+        <label for="inf_custom_LucyComments"></label>
           <textarea class="col-6" id="inf_custom_LucyComments" name="inf_custom_LucyComments" rows="6" placeholder="Please let me know what questions you have!"></textarea>
       </div>
-              <div class="col-6"></div>
-          </div>
+      <div class="col-6"></div>
+    </div>
 
-          <div class="row">
+    <div class="row">
+      <div class="infusion-submit">
+        <input type="submit" value="Thank You!" /></div>
+      <div class="col-10"></div>
+    </div>
+  </form>
+<script type="text/javascript" src="https://xj150.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=63fcd8441f440adfdb08c9af795425bf"></script>
+</article>
 
-      <div class="infusion-submit"><input type="submit" value="Thank You!" /></div>
-              <div class="col-10"></div>
-          </div>
-      </form>
-      <script type="text/javascript" src="https://xj150.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=63fcd8441f440adfdb08c9af795425bf"></script>
-              </article>
-
+  <div id="footer" class="row">
+      <div class="fb-like col-4">
+        <a href="https://www.facebook.com/lucyerbartist"><img src="../assets/img/landing-img/facebook-like-button.png" /></a>
+      </div>
+    <div class="col-4">
+      <a href="https://twitter.com/lucy_erb_artist" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @lucy_erb_artist</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+      <div class="col-4">
+        <span class="ig-follow" data-id="594d363" data-handle="erblucy" data-count="false" data-size="medium" data-username="false">
+        <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+      </div>
   </div>
 </div>
-
-<div class="wow slideInLeft row fixed footer">
-    <div class="section">
-        <div class="fb-like"
-             <a href="https://www.facebook.com/lucyerbartist"><img src="../assets/img/layout-img/facebook-like-button.png" /></a>
-        </div>
-    </div>
-
-    <div class="section">
-        <a href="https://twitter.com/lucy_erb_artist" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @lucy_erb_artist</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    </div>
-    <div class="section">
-          <span class="ig-follow" data-id="594d363" data-handle="erblucy" data-count="false" data-size="medium" data-username="false"></span>
-
-    </div>
-</div>
-
-<!--Instagram Script-->
-
-<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
-
-
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/hover.js"></script>
   </body>
 </html>

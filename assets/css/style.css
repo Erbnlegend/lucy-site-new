@@ -231,11 +231,12 @@ table {
   #nav a {
     width: 100%;
     font-size: 2em;
+    margin: .5em auto;
   }
   #nav h1 {
     width: 100%;
     font-size: 3em;
-    margin-top: 0;
+    margin: .5em auto;
   }
   #landing h1 {
     font-size: 2em;
@@ -257,8 +258,17 @@ table {
     display: block;
     clear: both;
   }
-  .skill {
+  #bio svg {
+    width: 100%;
+  }
+  #bio .skill {
     width: 33%;
+  }
+  #bio .skill h4 {
+    width: 100%;
+  }
+  #sliderShowFull {
+    width: 100%;
   }
   #sliderShowFull .float {
     white-space: pre-wrap;
@@ -472,17 +482,25 @@ table {
   }
   #nav a {
     width: 100%;
-    font-size: 2.5em;
+    font-size: 2em;
+    margin: 1em auto;
   }
   #nav h1 {
     width: 80%;
     font-size: 5em;
+    margin: .5em auto .5em;
   }
   #container {
     margin: 5% auto 0;
     content: '';
     display: block;
     clear: both;
+  }
+  #bio svg {
+    width: 70%;
+  }
+  #bio .skill h4 {
+    width: 70%;
   }
   #sliderShowFull, #sliderShowPart {
     width: 90%;
@@ -498,6 +516,13 @@ table {
     font-size: .5em;
     width: 25%;
     padding: .5em;
+  }
+  .sectionFull {
+    width: 49%;
+    display: inline-block;
+  }
+  .sectionFull:nth-of-type(2n +1) {
+    margin-right: 1%;
   }
 }
 
@@ -658,10 +683,12 @@ table {
   #nav a {
     font-size: 2em;
     width: 100%;
+    margin: 1em auto;
   }
   #nav h1 {
     width: 60%;
     font-size: 5em;
+    margin: 1em auto;
   }
   #container {
     margin: 5% auto 0;
@@ -672,6 +699,12 @@ table {
   #content {
     width: 75%;
     margin: 0 auto;
+  }
+  #bio svg {
+    width: 60%;
+  }
+  #bio .skill h4 {
+    width: 60%;
   }
   #sliderShowFull, #sliderShowPart {
     width: 80%;
@@ -689,6 +722,13 @@ table {
     width: 25%;
     padding: .8em;
   }
+  .sectionFull {
+    width: 49%;
+    display: inline-block;
+  }
+  .sectionFull:nth-of-type(2n +1) {
+    margin-right: 1%;
+  }
 }
 
 @media only screen and (max-height: 500px) {
@@ -704,11 +744,12 @@ table {
   #nav a {
     width: 100%;
     font-size: 1.5em;
+    margin: 0 auto;
   }
   #nav h1 {
     width: 80%;
     font-size: 3em;
-    margin-top: 0;
+    margin: .5em auto;
   }
 }
 
@@ -720,20 +761,11 @@ table {
 }
 
 #sliderShowFull .sectionFull, #sliderShowFull .sectionPart {
-  background: rgba(96, 125, 139, 0.9);
+  background: #607d8b;
   box-shadow: 1px 1px 3px 2px #646464;
-  margin-top: 2%;
+  margin-top: 1%;
   overflow: hidden;
   cursor: pointer;
-}
-
-#sliderShowFull .sectionFull {
-  width: 49%;
-  display: inline-block;
-}
-
-#sliderShowFull .sectionFull:nth-of-type(2n +1) {
-  margin-right: 2%;
 }
 
 #sliderShowFull .title h4, #sliderShowFull .float {
@@ -792,20 +824,11 @@ table {
 }
 
 #sliderShowPart .sectionFull, #sliderShowPart .sectionPart {
-  background: rgba(96, 125, 139, 0.9);
+  background: #607d8b;
   box-shadow: 1px 1px 3px 2px #646464;
-  margin-top: 2%;
+  margin-top: 1%;
   overflow: hidden;
   cursor: pointer;
-}
-
-#sliderShowPart .sectionFull {
-  width: 49%;
-  display: inline-block;
-}
-
-#sliderShowPart .sectionFull:nth-of-type(2n +1) {
-  margin-right: 2%;
 }
 
 #sliderShowPart .title h4, #sliderShowPart .float {
@@ -837,12 +860,12 @@ table {
 }
 
 #sliderShowPart span {
-  border: 3px solid rgba(75, 98, 109, 0.9);
+  border: 3px solid #4b626d;
   opacity: 0;
 }
 
 #sliderShowPart span:hover {
-  background: rgba(75, 98, 109, 0.9);
+  background: #4b626d;
 }
 
 #sliderShowPart .float {
@@ -875,7 +898,7 @@ body, html {
 }
 
 #nav {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   display: none;
   position: fixed;
   top: 0;
@@ -901,7 +924,6 @@ body, html {
 
 #nav h1 {
   text-align: center;
-  margin: 1em auto;
   border-bottom: 1px solid white;
   color: white;
 }
@@ -911,8 +933,8 @@ body, html {
   width: 30%;
   display: block;
   text-align: center;
-  margin: 1em auto;
   text-decoration: none;
+  padding: 10px;
 }
 
 #nav a:hover {
@@ -924,7 +946,7 @@ article {
   position: relative;
   padding: 2em 0;
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 article:after {
@@ -947,6 +969,7 @@ article p {
 
 #about img {
   max-height: 500px;
+  width: 100%;
 }
 
 #bio h3 {
@@ -970,7 +993,6 @@ article p {
   font-size: 2em;
   text-align: center;
   border-radius: 100%;
-  width: 60%;
   height: 100%;
   padding-top: 25%;
   transition: all .2s linear;
@@ -983,10 +1005,33 @@ article p {
 
 #bio svg {
   display: block;
-  width: 60%;
   height: 100%;
   padding: 0;
   margin: 0 auto;
+}
+
+#contact {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+#contact input, #contact textarea {
+  margin: 1px;
+  font-size: 1.1em;
+  font-family: Lobster;
+}
+
+#contact input[type=submit] {
+  background: #607d8b;
+  display: block;
+  width: 75%;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+  background: #4b626d;
 }
 
 .logo {

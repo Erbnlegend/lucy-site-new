@@ -35,7 +35,7 @@ body, html {
   }
 }
 #nav {
-  background: rgba(0,0,0,.9);
+  background: rgba(0,0,0,.95);
   display: none;
   position: fixed;
   top: 0;
@@ -57,7 +57,6 @@ body, html {
   }
   h1 {
     text-align: center;
-    margin: 1em auto;
     border-bottom: 1px solid $white;
     color: $white;
   }
@@ -66,8 +65,8 @@ body, html {
     width: 30%;
     display: block;
     text-align: center;
-    margin: 1em auto;
     text-decoration: none;
+    padding: 10px;
     &:hover {
       background: $white;
       color: $black;
@@ -75,14 +74,11 @@ body, html {
   }
 }
 
-#content {
-
-}
 article {
   position: relative;
   padding: 2em 0;
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
   &:after {
     content: '';
     display: block;
@@ -102,6 +98,7 @@ article {
 #about {
   img {
     max-height: 500px;
+    width: 100%;
   }
 }
 #bio {
@@ -124,7 +121,6 @@ article {
     font-size: 2em;
     text-align: center;
     border-radius: 100%;
-    width: 60%;
     height: 100%;
     padding-top: 25%;
     transition: all .2s linear;
@@ -135,10 +131,29 @@ article {
   }
   svg {
     display: block;
-    width: 60%;
     height: 100%;
     padding: 0;
     margin: 0 auto;
+  }
+}
+#contact {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 4em;
+  input, textarea {
+    margin: 1px;
+    font-size: 1.1em;
+    font-family: Lobster;
+  }
+  input[type=submit] {
+    background: $teal;
+    display: block;
+    width: 75%;
+    padding: 1em;
+    cursor: pointer;
+    &:hover {
+      background: darken($teal, 10);
+    }
   }
 }
 

@@ -6,16 +6,9 @@
   .sectionFull, .sectionPart {
     background: $teal;
     box-shadow: 1px 1px 3px 2px rgb(100,100,100);
-    margin-top: 2%;
+    margin-top: 1%;
     overflow: hidden;
     cursor: pointer;
-  }
-  .sectionFull {
-    width: 49%;
-    display: inline-block;
-    &:nth-of-type(2n +1) {
-      margin-right: 2%;
-  }
   }
   .title h4, .float {
     display: block;

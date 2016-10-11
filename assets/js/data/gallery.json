@@ -2,7 +2,7 @@
 	"id": "1",
 	"name": "Subconcious Sea",
 	"category": "sea",
-	"imgsrc": "sea/thumbs-la/fish.jpg",
+	"imgsrc": "sea/thumbs-la/thumb_sea.jpg",
 	"galImages": [{
 		"id": 1,
 		"imgSmall": "sea/thumbs/sea_1.jpg",
@@ -72,7 +72,7 @@
 	"id": "2",
 	"name": "Drifting Desert Dreams",
 	"category": "desert",
-	"imgsrc": "desert/thumbs-la/ddd.jpg",
+	"imgsrc": "desert/thumbs-la/thumb_desert.jpg",
 	"galImages": [{
 		"id": 1,
 		"imgSmall": "desert/thumbs/desert_1.jpg",
@@ -98,7 +98,7 @@
 	"id": "3",
 	"name": "Metals",
 	"category": "metal",
-	"imgsrc": "metal/thumbs-la/le5.jpg",
+	"imgsrc": "metal/thumbs-la/thumb_metal.jpg",
 	"galImages": [{
 		"id": 1,
 		"imgSmall": "metal/thumbs/metal_1.jpg",
