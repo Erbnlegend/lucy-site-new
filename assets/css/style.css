@@ -764,7 +764,7 @@ table {
 }
 
 #sliderShowFull .sectionFull, #sliderShowFull .sectionPart {
-  background: rgba(33, 150, 243, 0.9);
+  background: #607d8b;
   box-shadow: 1px 1px 3px 2px #646464;
   margin-top: 1%;
   overflow: hidden;
@@ -827,7 +827,7 @@ table {
 }
 
 #sliderShowPart .sectionFull, #sliderShowPart .sectionPart {
-  background: rgba(33, 150, 243, 0.9);
+  background: #607d8b;
   box-shadow: 1px 1px 3px 2px #646464;
   margin-top: 1%;
   overflow: hidden;
@@ -863,12 +863,12 @@ table {
 }
 
 #sliderShowPart span {
-  border: 3px solid rgba(12, 124, 213, 0.9);
+  border: 3px solid #4b626d;
   opacity: 0;
 }
 
 #sliderShowPart span:hover {
-  background: rgba(12, 124, 213, 0.9);
+  background: #4b626d;
 }
 
 #sliderShowPart .float {
@@ -989,7 +989,7 @@ article p {
 
 #bio h4 {
   background: rgba(0, 0, 0, 0.1);
-  color: black;
+  color: transparent;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -1026,7 +1026,7 @@ article p {
 }
 
 #contact input[type=submit] {
-  background: rgba(33, 150, 243, 0.9);
+  background: #607d8b;
   display: block;
   width: 75%;
   padding: 1em;
@@ -1034,7 +1034,7 @@ article p {
 }
 
 #contact input[type=submit]:hover {
-  background: rgba(12, 124, 213, 0.9);
+  background: #4b626d;
 }
 
 .logo {
